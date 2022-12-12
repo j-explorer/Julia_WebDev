@@ -1,0 +1,87 @@
+body{
+  display:flex;
+  flex-direction: row;
+}
+
+img{
+  display:flex;
+  flex-direction: column;
+  margin-top:5%;
+  margin-left: 8%;
+}
+
+#syllabus{
+  position: relative;
+  font-family: monospace;
+  font-size: 25px;
+  margin-left:13%;
+  margin-top:3%;
+  padding:18%;
+}
+
+#js_syllabus, #js_ws_syllabus, #d_ws_syllabus, #cd_line_syllabus {
+  position: absolute;
+  margin-left: -50%;
+}
+
+#js_syllabus{
+  margin-top:-45%;
+}
+
+#js_ws_syllabus{
+  margin-top: 65%;
+}
+
+#d_ws_syllabus{
+  margin-top: 160%;
+}
+
+#cd_line_syllabus{
+  margin-top: 250%;
+}
+
+li{
+  line-height: 3rem;
+}
+
+@media screen and (min-width:320px) and (max-width:500px){
+
+  img{
+    width:180%;
+    margin-top:80%;
+  }
+  #cert_1{
+    margin-top:0%;
+  }
+
+  #syllabus{
+    font-size: 18px;
+    margin-left:13%;
+    margin-top:50%;
+    padding:18%;
+  }
+
+  li{
+    line-height: 1rem;
+  }
+ 
+  #js_syllabus{
+    margin-top:20%;
+    margin-left:-200%;
+  }
+
+  #js_ws_syllabus{
+    margin-top: 330%;
+    margin-left:-200%;
+  }
+  
+  #d_ws_syllabus{
+    margin-top: 650%;
+    margin-left:-200%;
+  }
+  
+  #cd_line_syllabus{
+    margin-top: 950%;
+    margin-left:-200%;
+  }
+}
