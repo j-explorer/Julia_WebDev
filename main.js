@@ -24,5 +24,3 @@ function color(event){
   } 
 }
 
-//build gulp task
-exports.build=series(scssTask, jsTask);
