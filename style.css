@@ -14,21 +14,30 @@ h1{
  
 }
 
+.parallax{
+  background: url("https://www.dropbox.com/s/nt5g9qbn5ocrtc2/traintracks1.png?dl=1")
+  no-repeat fixed 100%;
+}
+
+.inner_parallax{
+  padding:30%;
+}
+
 h2{
   position:absolute;
-  font-family: Arial;
+  font-family: Trebuchet MS;
   font-weight:400;
   font-size: 50px;
-  margin-top: -30%;
-  margin-left: 2%;
+  margin-top: -4%;
+  margin-left: 8%;
   color: white;
 }
 
 #icons{
 position:absolute;
 width:15%;
-margin-top: -25%;
-margin-left:10%
+margin-top: 2%;
+margin-left:16%
 }
 
 #twitter,#linkedin{
@@ -250,14 +259,23 @@ h1{
 
 h2{
   font-size: 25px;
+  margin: 12% -45%;
+}
+
+.parallax{
+  background: url("https://www.dropbox.com/s/nt5g9qbn5ocrtc2/traintracks1.png?dl=1")
+  no-repeat fixed 55%;
+}
+
+.inner_parallax{
+  padding:70%;
 }
 
 #icons{
   position:absolute;
   display:flex;
   width:15%;
-  margin-top:-20%;
-  margin-left:10%;
+  margin:25% -35%;
   }
 
   #github{
@@ -369,7 +387,7 @@ margin-top: -30%;
  }
 
  .design-description{
-  font-family: Trebuchet MS;
+  font-family: Gill Sans;
   font-size: 16px;
 }
 
@@ -454,3 +472,87 @@ li{
   }
 }
 
+@media screen and (min-width:1450px) and (max-width:1500px), (min-width:1000px) and (max-width:1400px){
+
+  .parallax{
+    background: url("https://www.dropbox.com/s/nt5g9qbn5ocrtc2/traintracks1.png?dl=1")
+    no-repeat fixed 55%;
+  }
+  
+  .inner_parallax{
+    padding:70%;
+  }
+  
+  h2{
+   margin-left: -35%;
+   margin-top:-18%;
+  }
+
+  #icons{
+    width:15%;
+    margin:-10% -25%;
+    }
+
+  .website_image{
+    position:absolute;
+    width:40%;
+    margin-left:-25%;
+    margin-top:5%;
+  }
+
+  #website_1_p {
+    font-size: 20px;
+    width: 40%;
+    margin-top:5%;
+    margin-left:23%;
+    text-align: center;
+  }
+
+  #education{
+    margin-top: 50%;
+   }
+
+   #certificates{
+    width:25%;
+   }
+
+   #certificates_title{
+    margin-left:-40%;
+   }
+   #progress {
+    padding:12%;
+    margin-bottom: 0%;
+  }
+
+}
+
+@media screen and (min-width:1600px) and (max-width:2000px){
+
+  .parallax{
+    background: url("https://www.dropbox.com/s/nt5g9qbn5ocrtc2/traintracks1.png?dl=1")
+    no-repeat fixed 50%;
+  }
+ 
+   .website_image{
+     position:absolute;
+     width:40%;
+     margin-left:-25%;
+     margin-top:5%;
+   }
+ 
+   #website_1_p {
+     font-size: 25px;
+     width: 40%;
+     margin-top:5%;
+     margin-left:23%;
+     text-align: center;
+   }
+   
+   h2{
+    margin-left: 10%;
+   }
+
+   #education{
+    margin-top: 50%;
+   }
+}

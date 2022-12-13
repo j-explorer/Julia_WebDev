@@ -85,3 +85,50 @@ li{
     margin-left:-200%;
   }
 }
+
+@media screen and (min-width:1450px) and (max-width:1500px), (min-width:1000px) and (max-width:1400px){
+
+  img{
+    width:80%;
+  }
+
+  #syllabus{
+    margin-left:0%;
+  }
+
+#js_syllabus{
+    margin-top:-50%;
+  }
+  
+  #js_ws_syllabus{
+    margin-top:40%;
+  }
+
+  #d_ws_syllabus{
+  margin-top: 130%;
+  }
+
+  #cd_line_syllabus{
+    margin-top: 220%;
+  }
+}
+
+
+@media screen and (min-width:1600px) and (max-width:2000px){
+
+  #js_syllabus{
+    margin-top:-50%;
+  }
+  
+  #js_ws_syllabus{
+    margin-top:50%;
+  }
+
+  #d_ws_syllabus{
+  margin-top: 100%;
+  }
+
+  #cd_line_syllabus{
+    margin-top: 150%;
+  }
+}
