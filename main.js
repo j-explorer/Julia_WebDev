@@ -23,3 +23,6 @@ function color(event){
   document.getElementById('certificates_title').style.color = '';
   } 
 }
+
+//build gulp task
+exports.build=series(scssTask, jsTask);
