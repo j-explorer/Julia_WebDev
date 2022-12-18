@@ -19,7 +19,7 @@ img{
   padding:18%;
 }
 
-#js_syllabus, #js_ws_syllabus, #d_ws_syllabus, #cd_line_syllabus {
+#js_syllabus, #js_ws_syllabus, #d_ws_syllabus, #cd_line_syllabus, #responsive_syllabus {
   position: absolute;
   margin-left: -50%;
 }
@@ -38,6 +38,10 @@ img{
 
 #cd_line_syllabus{
   margin-top: 250%;
+}
+
+#responsive_syllabus{
+  margin-top:350%;
 }
 
 li{
@@ -84,9 +88,37 @@ li{
     margin-top: 950%;
     margin-left:-200%;
   }
+
+  #responsive_syllabus{
+    margin-top: 1260%;
+    margin-left:-200%;
+  }
 }
 
-@media screen and (min-width:1450px) and (max-width:1500px), (min-width:1000px) and (max-width:1400px){
+@media screen and (min-width:1000px) and (max-width:1100px){
+ 
+#js_syllabus{
+    margin-top:-50%;
+  }
+  
+  #js_ws_syllabus{
+    margin-top:80%;
+  }
+
+  #d_ws_syllabus{
+  margin-top: 220%;
+  }
+
+  #cd_line_syllabus{
+    margin-top: 350%;
+  }
+
+  #responsive_syllabus{
+    margin-top: 500%;
+  }
+}
+
+@media screen and (min-width:1200px) and (max-width:1400px),(min-width:1450px) and (max-width:1500px) {
 
   img{
     width:80%;
@@ -111,10 +143,15 @@ li{
   #cd_line_syllabus{
     margin-top: 220%;
   }
+
+  #responsive_syllabus{
+    margin-top: 320%;
+  }
+
 }
 
 
-@media screen and (min-width:1600px) and (max-width:2000px){
+@media screen and (min-width:1600px) and (max-width:1800px){
 
   #js_syllabus{
     margin-top:-50%;
@@ -125,10 +162,38 @@ li{
   }
 
   #d_ws_syllabus{
+  margin-top: 140%;
+  }
+
+  #cd_line_syllabus{
+    margin-top: 210%;
+  }
+
+  #responsive_syllabus{
+    margin-top: 320%;
+  }
+
+}
+
+@media screen and (min-width:1810px) and (max-width:2000px){
+  #js_syllabus{
+    margin-top:-50%;
+  }
+  
+  #js_ws_syllabus{
+    margin-top:30%;
+  }
+
+  #d_ws_syllabus{
   margin-top: 100%;
   }
 
   #cd_line_syllabus{
-    margin-top: 150%;
+    margin-top: 180%;
   }
+
+  #responsive_syllabus{
+    margin-top: 250%;
+  }
+
 }
