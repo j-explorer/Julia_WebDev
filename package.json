@@ -1,0 +1,23 @@
+{
+  "name": "web_dev_cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-explorer/Web_Dev_CV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-explorer/Web_Dev_CV/issues"
+  },
+  "homepage": "https://github.com/j-explorer/Web_Dev_CV#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
