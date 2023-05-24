@@ -19,6 +19,7 @@ This website is a portfolio that contains my current projects and summarises my 
 - Tailwind/forms
 - Tailwind/typography
 - HTML5 
+- CSS3
 - Vanilla JS
 - [Google Fonts](https://fonts.google.com/)
 - [Font Awesome](https://fontawesome.com/)
