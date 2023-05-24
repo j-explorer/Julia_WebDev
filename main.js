@@ -11,6 +11,6 @@ const certificateButton= document.getElementById('certificate_button');
 
 certificateButton.addEventListener('click', openCertificates);
 function openCertificates (){
-  window.open("./certificates/index.html", "_self");
+  window.open("./certificates/certificates.html", "_self");
 }
 

@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/*.{html,js}"],
+  content: [
+		"./*.{html,js}",
+		"./index.html",
+		"./certificates.html"],
   theme: {
     extend: {},
     height: {
@@ -32,9 +35,12 @@ module.exports = {
 			"lg": "1024px",
 			"xl": "1280px",
 			"2xl": "1536px",
-    }
-  },
+    },
+		fontFamily: {
+      "Raleway": "Raleway",
+    },
 
   plugins: [],
+}
 }
 
