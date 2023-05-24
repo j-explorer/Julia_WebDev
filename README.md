@@ -16,6 +16,8 @@ This website is a portfolio that contains my current projects and summarises my 
 ## Dependencies 
 
 - [TailWind CSS](https://tailwindcss.com/)
+- Tailwind/forms
+- Tailwind/typography
 - HTML5 
 - Vanilla JS
 - [Google Fonts](https://fonts.google.com/)
