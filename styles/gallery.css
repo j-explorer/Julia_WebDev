@@ -1,0 +1,86 @@
+body {
+  margin: 0%;
+  font-family: "Archivo", sans-serif;
+}
+
+.top-section {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  width: 100%;
+}
+
+nav {
+  rotate: 270deg;
+  margin-top: -8%;
+  margin-right: 17%;
+  width: 8%;
+  height: 40vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home,
+#gallery,
+#uiux,
+#code,
+#web3 {
+  color: rgb(0, 0, 0);
+  margin-top: 50%;
+  rotate: 45deg;
+}
+
+#home:hover,
+#gallery:hover,
+#uiux:hover,
+#code:hover,
+#web3:hover {
+  color: rgb(163, 88, 35);
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10%;
+  height: 13vh;
+  margin-left: 10%;
+  margin-top: 0%;
+}
+
+.linkedin {
+  width: 25%;
+  margin-top: 0%;
+  cursor: pointer;
+}
+
+.github {
+  margin-top: 28%;
+  margin-left: -10%;
+  cursor: pointer;
+  color: #cd6e29;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  animation: fadeIn 3s;
+}
+
+img {
+  width: 20%;
+  margin: 2% 2%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

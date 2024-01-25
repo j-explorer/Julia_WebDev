@@ -1,0 +1,82 @@
+html {
+  background: url(../images/home/julia.webp) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(12, 8.3%);
+  grid-template-rows: repeat(12, 8.3%);
+  gap: 1%;
+}
+
+nav {
+  grid-area: 1/7/2/9;
+  rotate: 270deg;
+}
+
+#top-section-mobile,
+#julia-jovanovic-mobile {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#gallery,
+#uiux,
+#code,
+#web3 {
+  color: rgba(205, 110, 41, 1);
+  margin: 0;
+  margin-top: 40%;
+  rotate: 45deg;
+}
+
+#gallery:hover,
+#uiux:hover,
+#code:hover,
+#web3:hover {
+  color: rgb(163, 88, 35);
+}
+
+.about {
+  grid-area: 4/8/8/11;
+}
+
+#about-title {
+  color: #696868;
+}
+
+p {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 1.6px;
+}
+
+#name {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+  width: 550%;
+  margin-left: 0%;
+}
+
+#julia-jovanovic {
+  width: 100%;
+}

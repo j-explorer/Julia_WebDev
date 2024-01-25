@@ -1,0 +1,262 @@
+@media only screen and (max-width: 480px) {
+  /* Homepage menu bar*/
+
+  #home-html {
+    background: url(../images/mobile/home/julia-mobile.webp) no-repeat center
+      center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  nav,
+  #name {
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+    z-index: 2;
+    grid-area: 1/10/2/11;
+    margin-top: 50%;
+    width: 100%;
+    height: 5vh;
+    padding: 0;
+  }
+
+  #bar1 {
+    background-color: rgba(205, 110, 41, 1);
+    margin-top: 50%;
+    margin-left: 10%;
+    padding: 0;
+    width: 30px;
+    height: 2px;
+    transform: none;
+    transition: none;
+  }
+
+  #bar3 {
+    background-color: rgba(205, 110, 41, 1);
+    margin-top: -30%;
+    margin-left: 10%;
+    padding: 0;
+    width: 30px;
+    height: 2px;
+    transform: none;
+    transition: none;
+  }
+
+  #mobile-menu {
+    display: none;
+    grid-area: 1/1/12/12;
+    z-index: 1;
+    background-color: rgba(255, 255, 255);
+  }
+
+  .mobile-menu-links {
+    text-decoration: none;
+    transition: none;
+    color: rgba(205, 110, 41, 1);
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin-top: 25%;
+    animation: fadeIn 1s;
+  }
+
+  .link-divider {
+    transition: none;
+    height: 2px;
+    width: 90%;
+    margin-top: -3%;
+    margin-left: 10%;
+    background-color: rgba(205, 110, 41, 1);
+    animation: fadeIn 1s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .linkedin {
+    width: 100%;
+    grid-area: 1/1/1/1;
+    margin-left: 20%;
+    margin-top: 20%;
+  }
+
+  .about {
+    grid-area: 8/1/11/10;
+    margin-left: 3%;
+  }
+
+  #about-title {
+    color: rgb(194, 194, 194);
+    font-size: 14px;
+  }
+
+  p {
+    color: rgb(219, 219, 219);
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 1.6px;
+  }
+
+  #julia-jovanovic-mobile {
+    display: block;
+    width: 100%;
+    grid-area: 2/11/7/12;
+  }
+
+  /* Gallery page*/
+
+  .gallery-imgs {
+    width: 45%;
+    margin: 5% 0%;
+  }
+
+  /* UIUX page*/
+
+  #uiux-content {
+    grid-template-rows: 8% 1fr 20% 20% 20%;
+  }
+
+  .uiux-content {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / span16;
+    grid-row-start: 2;
+    justify-content: space-evenly;
+  }
+
+  .uiux-projects {
+    width: 30%;
+    cursor: pointer;
+  }
+
+  #fluxacademy {
+    margin-top: 0%;
+    grid-area: 3/2/3/8;
+  }
+
+  #frontendmasters {
+    margin-top: 0%;
+    grid-area: 3/9/3/16;
+  }
+
+  #books {
+    margin-top: 0%;
+    grid-area: 4/2/4/8;
+  }
+
+  .uiux-imgs {
+    grid-row-start: 5;
+  }
+
+  #UIUXOrange {
+    margin-left: -3%;
+    margin-top: 0%;
+  }
+
+  #UIUXBlue {
+    margin-left: 3%;
+    margin-top: 0%;
+  }
+  /* Code page*/
+
+  #code-content {
+    grid-template-rows: 8% 50% 20% 1fr;
+  }
+
+  #collab-li {
+    margin-left: -12%;
+  }
+
+  #tech-li {
+    margin-left: -15%;
+  }
+
+  #collab {
+    margin-top: 0%;
+    margin-left: -5%;
+    grid-area: 3/5/3/11;
+  }
+
+  #tech {
+    margin-top: 0%;
+    margin-left: -10%;
+    grid-area: 3/11/3/12;
+  }
+
+  /* Web3 page*/
+
+  #web3-body {
+    grid: none;
+  }
+
+  #web3-content {
+    margin-top: 115%;
+    background-color: rgba(105, 0, 0, 0.868);
+    color: white;
+    height: 50vh;
+  }
+
+  #azuki-title {
+    margin-top: 5%;
+  }
+
+  #azuki-p {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 1.5%;
+    margin: 2%;
+    margin-left: 3%;
+  }
+
+  button:hover {
+    background-color: rgba(105, 0, 0, 0.868);
+    color: white;
+  }
+
+  /* Shared styles */
+
+  .top-section {
+    justify-content: end;
+    height: 8vh;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: left;
+    width: 30%;
+    height: 9vh;
+  }
+
+  .linkedin {
+    width: 30%;
+    margin-top: 0%;
+  }
+
+  .github {
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+
+  .page-titles {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 9px;
+    margin-left: -35%;
+  }
+}

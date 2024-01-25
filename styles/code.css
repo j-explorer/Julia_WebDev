@@ -1,0 +1,120 @@
+body {
+  margin: 0%;
+}
+
+.content {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  font-family: "Archivo", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: 15% 1fr 40%;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  grid-column: 1 / span16;
+  grid-row-start: 1;
+}
+
+nav {
+  transform: rotate(270deg);
+  margin-top: -8%;
+  margin-right: 17%;
+  width: 8%;
+  height: 40vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home,
+#gallery,
+#uiux,
+#code,
+#web3 {
+  color: rgb(0, 0, 0);
+  margin-top: 50%;
+  transform: rotate(45deg);
+}
+
+#home:hover,
+#gallery:hover,
+#uiux:hover,
+#code:hover,
+#web3:hover {
+  color: rgb(163, 88, 35);
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10%;
+  height: 13vh;
+  margin-left: 10%;
+  margin-top: 0%;
+}
+
+.linkedin {
+  width: 25%;
+  margin-top: 0%;
+  cursor: pointer;
+}
+
+.github {
+  margin-top: 28%;
+  margin-left: -10%;
+  cursor: pointer;
+  color: #cd6e29;
+}
+
+.page-titles {
+  font-size: 18px;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 16px;
+  margin-top: 5%;
+}
+
+#collab-li {
+  margin-left: -15%;
+}
+
+#tech-li {
+  margin-left: -20%;
+}
+
+#collab {
+  grid-area: 3/5/3/8;
+}
+
+#tech {
+  grid-area: 3/9/3/11;
+}
+
+.code-imgs {
+  height: 100%;
+  width: 100%;
+  grid-column: 1 / span16;
+  grid-row-start: 4;
+}
+
+#codeorange {
+  margin-left: -9%;
+  margin-top: 0%;
+}
+
+#codeblue {
+  margin-left: 10%;
+  margin-top: 0%;
+}
