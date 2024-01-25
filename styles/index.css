@@ -29,7 +29,7 @@ nav {
   rotate: 270deg;
 }
 
-#top-section-mobile,
+#mobile-menu,
 #julia-jovanovic-mobile {
   display: none;
 }
@@ -74,7 +74,7 @@ p {
   flex-direction: column-reverse;
   height: 100vh;
   width: 550%;
-  margin-left: 0%;
+  margin-left: -100%;
 }
 
 #julia-jovanovic {
