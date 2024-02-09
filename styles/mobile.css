@@ -15,14 +15,24 @@
     display: none;
   }
 
-  #menu-icon {
+  #top-section-mobile {
     display: block;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: end;
     z-index: 2;
-    grid-area: 1/10/2/11;
-    margin-top: 50%;
-    width: 100%;
+    height: 6vh;
+    grid-column: 1/12;
+    grid-row-start: 1;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-top: auto;
+    z-index: 2;
+    margin-right: 5%;
     height: 5vh;
-    padding: 0;
   }
 
   #bar1 {
@@ -47,9 +57,13 @@
     transition: none;
   }
 
-  #mobile-menu {
+  .mobile-menu {
     display: none;
-    grid-area: 1/1/12/12;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     z-index: 1;
     background-color: rgba(255, 255, 255);
   }
@@ -75,25 +89,10 @@
     animation: fadeIn 1s;
   }
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .linkedin {
-    width: 100%;
-    grid-area: 1/1/1/1;
-    margin-left: 20%;
-    margin-top: 20%;
-  }
-
   .about {
-    grid-area: 8/1/11/10;
+    grid-area: 4/1/6/10;
     margin-left: 3%;
+    margin-top: 20%;
   }
 
   #about-title {
@@ -101,7 +100,7 @@
     font-size: 14px;
   }
 
-  p {
+  #about-p {
     color: rgb(219, 219, 219);
     font-size: 12px;
     line-height: 150%;
@@ -122,41 +121,12 @@
   }
 
   /* UIUX page*/
-
-  #uiux-content {
-    grid-template-rows: 8% 1fr 20% 20% 20%;
-  }
-
-  .uiux-content {
-    display: flex;
-    flex-wrap: wrap;
-    grid-column: 1 / span16;
-    grid-row-start: 2;
-    justify-content: space-evenly;
-  }
-
-  .uiux-projects {
-    width: 30%;
-    cursor: pointer;
-  }
-
-  #fluxacademy {
-    margin-top: 0%;
-    grid-area: 3/2/3/8;
-  }
-
-  #frontendmasters {
-    margin-top: 0%;
-    grid-area: 3/9/3/16;
-  }
-
-  #books {
-    margin-top: 0%;
-    grid-area: 4/2/4/8;
+  .content {
+    grid-template-rows: 10% 15% 25% 25% 1fr;
   }
 
   .uiux-imgs {
-    grid-row-start: 5;
+    grid-row-start: 2;
   }
 
   #UIUXOrange {
@@ -168,43 +138,73 @@
     margin-left: 3%;
     margin-top: 0%;
   }
+
+  #fluxacademy {
+    margin-top: 0%;
+    grid-area: 3/2/3/9;
+  }
+
+  #frontendmasters {
+    margin-top: 0%;
+    grid-area: 3/10/3/17;
+  }
+
+  #books {
+    margin-top: 0%;
+    grid-area: 4/2/4/11;
+  }
+
+  #books-li {
+    margin-left: 5%;
+  }
+
+  .uiux-content {
+    grid-row-start: 5;
+  }
+
+  .uiux-projects {
+    width: 100%;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
   /* Code page*/
 
   #code-content {
-    grid-template-rows: 8% 50% 20% 1fr;
-  }
-
-  #collab-li {
-    margin-left: -12%;
-  }
-
-  #tech-li {
-    margin-left: -15%;
+    grid-template-rows: 10% 15% 25% 1fr;
   }
 
   #collab {
     margin-top: 0%;
     margin-left: -5%;
-    grid-area: 3/5/3/11;
+    grid-area: 3/3/3/11;
   }
 
   #tech {
     margin-top: 0%;
     margin-left: -10%;
-    grid-area: 3/11/3/12;
+    grid-area: 3/12/3/13;
   }
 
+  #tech-title {
+    margin-left: 10%;
+  }
+
+  #collab-title {
+    margin-left: 0%;
+  }
   /* Web3 page*/
 
   #web3-body {
     grid: none;
+    overflow-y: scroll;
   }
 
   #web3-content {
     margin-top: 115%;
-    background-color: rgba(105, 0, 0, 0.868);
-    color: white;
-    height: 50vh;
+    height: 55vh;
   }
 
   #azuki-title {
@@ -212,6 +212,8 @@
   }
 
   #azuki-p {
+    padding: 2%;
+    color: black;
     font-size: 13px;
   }
 
@@ -222,41 +224,50 @@
     margin-left: 3%;
   }
 
-  button:hover {
-    background-color: rgba(105, 0, 0, 0.868);
-    color: white;
-  }
-
   /* Shared styles */
-
   .top-section {
     justify-content: end;
-    height: 8vh;
+    height: 6vh;
   }
 
   .socials {
     display: flex;
-    justify-content: left;
-    width: 30%;
-    height: 9vh;
+    justify-content: space-evenly;
+    width: 35%;
+    height: 6vh;
   }
 
   .linkedin {
-    width: 30%;
-    margin-top: 0%;
+    width: 28%;
+    margin-top: 5%;
+    margin-left: -10%;
   }
 
   .github {
-    margin-top: 20%;
-    margin-left: 10%;
+    margin-top: 12%;
+    margin-left: -20%;
+    font-size: 0.9em;
   }
 
   .page-titles {
-    font-size: 14px;
+    font-size: 13px;
+  }
+
+  .features-title {
+    font-size: 13px;
   }
 
   li {
-    font-size: 9px;
+    font-size: 10px;
     margin-left: -35%;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }

@@ -8,12 +8,19 @@ body {
   top: 0;
   display: flex;
   justify-content: space-between;
-  height: 15vh;
-  width: 100%;
+  height: 10.5vh;
+  grid-column: 1 / span2;
+  grid-row-start: 1;
+  background-color: white;
+}
+
+.menu-icon,
+.mobile-menu {
+  display: none;
 }
 
 nav {
-  rotate: 270deg;
+  transform: rotate(270deg);
   margin-top: -8%;
   margin-right: 17%;
   width: 8%;
@@ -24,29 +31,25 @@ a {
   text-decoration: none;
 }
 
-#home,
-#gallery,
-#uiux,
-#code,
-#web3 {
+.nav-links {
   color: rgb(0, 0, 0);
   margin-top: 50%;
-  rotate: 45deg;
+  transform: rotate(45deg);
 }
 
-#home:hover,
-#gallery:hover,
-#uiux:hover,
-#code:hover,
-#web3:hover {
-  color: rgb(163, 88, 35);
+.nav-links:hover {
+  color: rgb(118, 118, 118);
+}
+
+#gallery {
+  color: rgb(118, 118, 118);
 }
 
 .socials {
   display: flex;
   justify-content: space-evenly;
   width: 10%;
-  height: 13vh;
+  height: 10vh;
   margin-left: 10%;
   margin-top: 0%;
 }
@@ -58,7 +61,7 @@ a {
 }
 
 .github {
-  margin-top: 28%;
+  margin-top: 20%;
   margin-left: -10%;
   cursor: pointer;
   color: #cd6e29;

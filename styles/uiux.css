@@ -1,5 +1,6 @@
 body {
   margin: 0%;
+  overflow-x: hidden;
 }
 
 .content {
@@ -8,7 +9,7 @@ body {
   font-family: "Archivo", sans-serif;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: 8% 1fr 1fr 1fr 1fr;
+  grid-template-rows: 8% 1fr 50% 1fr;
 }
 
 .top-section {
@@ -16,10 +17,15 @@ body {
   top: 0;
   display: flex;
   justify-content: space-between;
-  height: 13vh;
-  grid-column: 1 / span16;
+  height: 10.5vh;
+  grid-column: 1 / span2;
   grid-row-start: 1;
   background-color: white;
+}
+
+.menu-icon,
+.mobile-menu {
+  display: none;
 }
 
 nav {
@@ -34,29 +40,25 @@ a {
   text-decoration: none;
 }
 
-#home,
-#gallery,
-#uiux,
-#code,
-#web3 {
+.nav-links {
   color: rgb(0, 0, 0);
   margin-top: 50%;
   transform: rotate(45deg);
 }
 
-#home:hover,
-#gallery:hover,
-#uiux:hover,
-#code:hover,
-#web3:hover {
-  color: rgb(163, 88, 35);
+.nav-links:hover {
+  color: rgb(118, 118, 118);
+}
+
+#uiux {
+  color: rgb(118, 118, 118);
 }
 
 .socials {
   display: flex;
   justify-content: space-evenly;
   width: 10%;
-  height: 13vh;
+  height: 10vh;
   margin-left: 10%;
   margin-top: 0%;
 }
@@ -68,7 +70,7 @@ a {
 }
 
 .github {
-  margin-top: 28%;
+  margin-top: 20%;
   margin-left: -10%;
   cursor: pointer;
   color: #cd6e29;
@@ -90,20 +92,6 @@ a {
   margin-left: 3%;
   margin-top: 0%;
 }
-.page-titles {
-  font-size: 18px;
-  color: black;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  font-size: 16px;
-  margin-left: -12%;
-  margin-top: 5%;
-}
 
 #fluxacademy {
   margin-top: 35%;
@@ -120,15 +108,53 @@ li {
   grid-area: 3/12/3/16;
 }
 
+.page-titles {
+  font-size: 16px;
+  color: black;
+}
+
+li {
+  font-size: 14px;
+  letter-spacing: 1.68px;
+  margin-left: -12%;
+  margin-top: 5%;
+}
+
+.authors {
+  margin-top: 1.2%;
+  list-style-type: none;
+}
+
 .uiux-content {
   display: flex;
   flex-wrap: wrap;
   grid-column: 1 / span16;
   grid-row-start: 4;
-  justify-content: space-evenly;
 }
 
 .uiux-projects {
-  width: 20%;
+  display: flex;
+  justify-content: end;
+  width: 50%;
   cursor: pointer;
+  background-color: #a8bde48b;
+}
+
+.project-imgs {
+  margin: auto;
+  width: 35%;
+}
+
+.uiux-project-descriptions {
+  width: 50%;
+}
+
+p {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 1.68px;
+}
+
+.features-title {
+  font-size: 16px;
 }

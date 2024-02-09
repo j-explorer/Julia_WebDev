@@ -27,10 +27,12 @@ body {
 nav {
   grid-area: 1/7/2/9;
   rotate: 270deg;
+  margin-top: 25%;
 }
 
-#mobile-menu,
-#julia-jovanovic-mobile {
+#top-section-mobile,
+#julia-jovanovic-mobile,
+.mobile-menu {
   display: none;
 }
 
@@ -38,21 +40,19 @@ a {
   text-decoration: none;
 }
 
-#gallery,
-#uiux,
-#code,
-#web3 {
+.nav-links {
   color: rgba(205, 110, 41, 1);
   margin: 0;
-  margin-top: 40%;
+  margin-top: 25%;
   rotate: 45deg;
 }
 
-#gallery:hover,
-#uiux:hover,
-#code:hover,
-#web3:hover {
-  color: rgb(163, 88, 35);
+.nav-links:hover {
+  color: rgb(118, 118, 118);
+}
+
+#home {
+  color: rgb(118, 118, 118);
 }
 
 .about {
@@ -60,13 +60,13 @@ a {
 }
 
 #about-title {
-  color: #696868;
+  color: rgb(118, 118, 118);
 }
 
 p {
   font-size: 14px;
   line-height: 150%;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.68px;
 }
 
 #name {
@@ -74,7 +74,7 @@ p {
   flex-direction: column-reverse;
   height: 100vh;
   width: 550%;
-  margin-left: -100%;
+  margin-left: 0%;
 }
 
 #julia-jovanovic {
