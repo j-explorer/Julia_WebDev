@@ -17,6 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -85,6 +88,7 @@
         <h3 class="page-titles" id="collab-title">COLLAB</h3>
         <ul>
           <li>Chingu - Matlibs Game</li>
+          <li>Runiq - FrostFare</li>
         </ul>
       </div>
 
@@ -95,11 +99,75 @@
           <li>CSS3, Tailwind CSS</li>
           <li>Javascript</li>
           <li>React</li>
+          <li>Vue.js</li>
           <li>Solidity</li>
           <li>Wordpress</li>
+          <li>MUI</li>
+        </ul>
+      </div>
+
+      <div id="education">
+        <h3 class="page-titles" id="education-title">EDUCATION</h3>
+        <ul>
+          <li>Free Code Camp</li>
+          <li>Codecademy</li>
         </ul>
       </div>
     </div>
+
+    <div class="code-content" id="app">
+      <div class="code-projects">
+        <div class="code-project-imgs">
+          <img
+            class="project-img"
+            id="frost-fare"
+            alt="Frostfare"
+            src="./images/code/frost-fare.webp"
+            @click="showModal = true"
+          />
+        </div>
+
+        <div v-if="showModal" class="modal">
+          <div class="modal-content">
+            <video id="videoPlayer" width="1500" height="900" controls>
+              <source src="./images/code/Frostfare.mp4" type="video/mp4" />
+              Your browser does not support this video.
+            </video>
+            <button class="exit-button" @click="closeModal">X</button>
+          </div>
+        </div>
+
+        <div class="code-project-descriptions">
+          <h3 class="page-titles">Runiq - Frostfare (In progress)</h3>
+          <p><i>April 2024 - Current</i></p>
+          <p>
+            FrostFare is a desktop application that automates the email warming
+            process to improve deliverability. By ensuring emails are seen as
+            legitimate, it helps prevent them from being marked as spam, thus
+            enhancing the effectiveness of email marketing campaigns through
+            better open rates and engagement.
+          </p>
+          <p>My contribution towards Frostfare included:</p>
+          <ul>
+            <li>
+              <i>Redesigned</i> Key Features: Enhanced user experience by
+              updating and refining several features, focusing on usability and
+              interface efficiency.
+            </li>
+            <li>
+              Front-End Development: Translated Figma designs into functional
+              interfaces, building a cohesive and user-friendly front-end.
+            </li>
+            <li>
+              Technology Implementation: Utilised React and Material-UI (MUI)
+              extensively to develop responsive and visually appealing
+              components.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="scripts/mobile.js"></script>
+    <script src="scripts/vue.js"></script>
   </body>
 </html>
