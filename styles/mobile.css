@@ -15,25 +15,25 @@
     display: none;
   }
 
-  #top-section-mobile {
-    display: block;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: end;
-    z-index: 2;
-    height: 6vh;
-    grid-column: 1/12;
-    grid-row-start: 1;
+  #top-section-mobile{
+  display:block;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: end;
+  z-index:2;
+  height: 6vh;
+  grid-column:1/12;
+  grid-row-start: 1;
   }
 
   .menu-icon {
-    display: block;
+    display:block;
     margin-top: auto;
-    z-index: 2;
-    margin-right: 5%;
+    z-index:2;
+    margin-right:5%;
     height: 5vh;
-  }
+  } 
 
   #bar1 {
     background-color: rgba(205, 110, 41, 1);
@@ -59,11 +59,11 @@
 
   .mobile-menu {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    position:fixed;
+    top: 0; 
+    left: 0; 
+    width:100%;
+    height:100vh;
     z-index: 1;
     background-color: rgba(255, 255, 255);
   }
@@ -89,10 +89,11 @@
     animation: fadeIn 1s;
   }
 
+
   .about {
     grid-area: 4/1/6/10;
     margin-left: 3%;
-    margin-top: 20%;
+    margin-top:20%;
   }
 
   #about-title {
@@ -115,17 +116,19 @@
 
   /* Gallery page*/
 
+
+
   .gallery-imgs {
     width: 45%;
     margin: 5% 0%;
   }
 
   /* UIUX page*/
-  .content {
-    grid-template-rows: 10% 15% 25% 25% 1fr;
+  .content{
+    grid-template-rows:10% 15% 25% 25% 1fr; 
   }
-
-  .uiux-imgs {
+  
+.uiux-imgs {
     grid-row-start: 2;
   }
 
@@ -154,26 +157,27 @@
     grid-area: 4/2/4/11;
   }
 
-  #books-li {
-    margin-left: 5%;
+  #books-li{
+    margin-left:5%;
   }
 
-  .uiux-content {
-    grid-row-start: 5;
+  .uiux-content{
+    grid-row-start:5;
   }
 
-  .uiux-projects {
+  .uiux-projects { 
     width: 100%;
   }
 
   p {
-    font-size: 10px;
+    font-size:14px;
   }
-
+  
+  
   /* Code page*/
 
   #code-content {
-    grid-template-rows: 10% 15% 25% 1fr;
+    grid-template-rows: 10% 15% 35% 1fr;
   }
 
   #collab {
@@ -185,25 +189,67 @@
   #tech {
     margin-top: 0%;
     margin-left: -10%;
-    grid-area: 3/12/3/13;
+    grid-area: 3/14/3/15;
   }
 
-  #tech-title {
-    margin-left: 10%;
+  #education {
+    margin-top: 0%;
+    margin-left: -10%;
+    grid-area: 4/3/4/10;
   }
 
-  #collab-title {
-    margin-left: 0%;
+  #tech-title{
+    margin-left:25%;
+  }
+ 
+   #collab-title{
+    margin-left:25%;
+   }
+
+   #education-title{
+    margin-left:25%;
+   }
+
+   .code-content{
+    width: 100%;
+    height: 110vh;
+  }
+
+   .code-projects{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 110vh;
+  }
+
+  .code-project-imgs{
+    width:80%;
+  }
+  
+  .code-project-descriptions {
+    width: 90%;
+    height: 70vh;
+  }
+
+  #videoPlayer{
+    width:100%;
+  }
+
+  .exit-button{            
+      margin-top:-180%;
+      margin-left:-10%;
   }
   /* Web3 page*/
 
   #web3-body {
     grid: none;
-    overflow-y: scroll;
+    overflow-y: scroll; 
   }
 
   #web3-content {
-    margin-top: 115%;
+    margin-top: 115%; 
     height: 55vh;
   }
 
@@ -223,6 +269,7 @@
     margin: 2%;
     margin-left: 3%;
   }
+
 
   /* Shared styles */
   .top-section {
@@ -246,20 +293,19 @@
   .github {
     margin-top: 12%;
     margin-left: -20%;
-    font-size: 0.9em;
+    font-size:0.9em;
   }
 
   .page-titles {
-    font-size: 13px;
+    font-size: 14px;
   }
 
-  .features-title {
-    font-size: 13px;
+.features-title{
+    font-size: 14px;
   }
 
   li {
-    font-size: 10px;
-    margin-left: -35%;
+    font-size: 14px;
   }
 
   @keyframes fadeIn {
